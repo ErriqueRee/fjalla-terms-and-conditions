@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>fjalla – Terms for Artists</title>
+<meta name="description" content="General Terms and Conditions (T&C) for Artists on fjalla.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fafaf9;
+    --surface: #ffffff;
+    --text: #1c1917;
+    --muted: #78716c;
+    --border: #e7e5e4;
+    --accent: #7c3aed;
+    --accent-soft: #f3e8ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0c0a09;
+      --surface: #1c1917;
+      --text: #f5f5f4;
+      --muted: #a8a29e;
+      --border: #292524;
+      --accent: #a78bfa;
+      --accent-soft: #2e1065;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  header.top {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--bg) 85%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .top-inner {
+    max-width: 1100px; margin: 0 auto; padding: 14px 16px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { font-weight: 700; font-size: 1.35rem; letter-spacing: -0.03em; color: var(--text); text-decoration: none; }
+  .logo span { color: var(--accent); }
+  .tag { font-size: .8rem; color: var(--muted); border: 1px solid var(--border); padding: 4px 10px; border-radius: 999px; }
+
+  .layout {
+    max-width: 1100px; margin: 0 auto; padding: 40px 16px 64px;
+    display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 48px;
+  }
+  nav.toc { position: sticky; top: 90px; align-self: start; max-height: calc(100vh - 110px); overflow-y: auto; }
+  nav.toc p { font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 10px; }
+  nav.toc ol { list-style: none; padding: 0; margin: 0; }
+  nav.toc a {
+    display: block; padding: 5px 10px; border-radius: 6px;
+    color: var(--muted); text-decoration: none; font-size: .88rem;
+  }
+  nav.toc a:hover { color: var(--text); background: var(--surface); }
+
+  main h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); line-height: 1.2; letter-spacing: -0.03em; margin: 0 0 8px; }
+  .subtitle { color: var(--muted); margin: 0 0 32px; }
+  section {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 24px 28px; margin-bottom: 16px;
+  }
+  section h2 { font-size: 1.1rem; margin: 0 0 14px; letter-spacing: -0.01em; }
+  section h2 .num { color: var(--accent); margin-right: 6px; }
+  section p { margin: 0 0 12px; }
+  section p:last-child { margin-bottom: 0; }
+  .clause { font-weight: 600; color: var(--muted); margin-right: 4px; font-variant-numeric: tabular-nums; }
+  ul { margin: 4px 0 12px; padding-left: 22px; }
+  li { margin: 3px 0; }
+  li::marker { color: var(--accent); }
+
+  footer {
+    border-top: 1px solid var(--border); color: var(--muted); font-size: .85rem;
+    text-align: center; padding: 24px 16px;
+  }
+  .totop { color: var(--accent); text-decoration: none; }
+
+  @media (max-width: 820px) {
+    .layout { grid-template-columns: 1fr; gap: 24px; padding-top: 28px; }
+    nav.toc { position: static; max-height: none; }
+    nav.toc ol { display: flex; flex-wrap: wrap; gap: 6px; }
+    nav.toc a { border: 1px solid var(--border); font-size: .8rem; padding: 4px 10px; }
+    section { padding: 20px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a class="logo" href="#">fjalla<span>.</span></a>
+    <span class="tag">Terms for Artists</span>
+  </div>
+</header>
+
+<div class="layout">
+  <nav class="toc" aria-label="Contents">
+    <p>Contents</p>
+    <ol>
+      <li><a href="#s2">§ 2 Services</a></li>
+      <li><a href="#s3">§ 3 Registration</a></li>
+      <li><a href="#s4">§ 4 Upload &amp; Metadata</a></li>
+      <li><a href="#s5">§ 5 100% Independent</a></li>
+      <li><a href="#s6">§ 6 Warranties</a></li>
+      <li><a href="#s7">§ 7 License Grant</a></li>
+      <li><a href="#s8">§ 8 No Rights Clearance</a></li>
+      <li><a href="#s9">§ 9 Payouts</a></li>
+      <li><a href="#s10">§ 10 Suspension &amp; Clawback</a></li>
+      <li><a href="#s11">§ 11 Complaints</a></li>
+      <li><a href="#s12">§ 12 Indemnification</a></li>
+      <li><a href="#s13">§ 13 Fraud</a></li>
+      <li><a href="#s14">§ 14 Liability</a></li>
+      <li><a href="#s15">§ 15 Termination</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <h1>General Terms and Conditions for Artists</h1>
+    <p class="subtitle">General Terms and Conditions (T&amp;C) for fjalla — T&amp;C for Artists</p>
+
+    <section id="s2">
+      <h2><span class="num">§ 2</span>Subject Matter / Services</h2>
+      <p><span class="clause">2.1</span> fjalla enables Artists to upload audio content ("Tracks"), musical works, recordings, and short videos ("Reels"), including the required metadata, for publication and availability within fjalla's streaming catalogue.</p>
+      <p><span class="clause">2.2</span> fjalla pays Artists a usage-based remuneration ("Artist Payout") for streams in accordance with the applicable payout model shown in the Artist Dashboard.</p>
+      <p><span class="clause">2.3</span> fjalla may modify the Platform's technical scope, features, formats, availability, user interface, monetisation models, or payout systems at any time, provided such changes are reasonable for Artists.</p>
+    </section>
+
+    <section id="s3">
+      <h2><span class="num">§ 3</span>Registration / Artist Account / Identity</h2>
+      <p><span class="clause">3.1</span> Use of the Platform requires the creation of an Artist Account.</p>
+      <p><span class="clause">3.2</span> Artists warrant that all information provided during registration and use (name, address, banking details, tax details, identity details, etc.) is complete, current, and truthful.</p>
+      <p><span class="clause">3.3</span> fjalla may request identity verification (KYC), tax information, and proof of rights ownership at any time. fjalla may restrict or suspend accounts until verification is completed.</p>
+      <p><span class="clause">3.4</span> fjalla may suspend accounts immediately without prior notice if misuse, fraud, rights violations, or false information is suspected.</p>
+    </section>
+
+    <section id="s4">
+      <h2><span class="num">§ 4</span>Upload Process / Metadata Obligations / Quality</h2>
+      <p><span class="clause">4.1</span> Artists must provide all required metadata completely and correctly, including but not limited to:</p>
+      <ul>
+        <li>Track title, ISRC, artist name, contributors</li>
+        <li>Composers, authors, producers, featured artists, split information</li>
+        <li>Label/publisher information (if applicable)</li>
+        <li>Cover art rights</li>
+        <li>Content warnings and any mandatory disclosures</li>
+      </ul>
+      <p><span class="clause">4.2</span> Artists acknowledge that incorrect or incomplete metadata may result in streams being misattributed and may lead to infringement of third-party rights.</p>
+      <p><span class="clause">4.3</span> fjalla is not obligated to verify metadata. Full responsibility remains with the Artist.</p>
+    </section>
+
+    <section id="s5">
+      <h2><span class="num">§ 5</span>Mandatory Requirement: 100% Independent / Rights Chain / No Collecting Societies</h2>
+      <p><span class="clause">5.1</span> fjalla accepts only content from Artists who are 100% independent.</p>
+      <p><span class="clause">5.2</span> "100% independent" means in particular that the Artist:</p>
+      <ul>
+        <li>owns or fully controls all rights in the master recordings and underlying works,</li>
+        <li>has no exclusive or conflicting agreements with labels, distributors, publishers, producers, managers, or other third parties,</li>
+        <li>has not assigned any rights (even partially) to third parties in a way that conflicts with exploitation through fjalla.</li>
+      </ul>
+      <p><span class="clause">5.3</span> fjalla does not cooperate worldwide with collecting societies (e.g., GEMA, PRS, ASCAP, BMI, SACEM, SIAE, SUISA, SOCAN, CISAC member societies, etc.), record labels, publishers, or collective rights management organisations.</p>
+      <p><span class="clause">5.4</span> Artists may upload content only if such content is not subject to exclusive representation or claims by a collecting society or publisher if such claims could result in liabilities for fjalla.</p>
+      <p><span class="clause">5.5</span> If an Artist is nevertheless a member of a collecting society, the Artist warrants that:</p>
+      <ul>
+        <li>fjalla will not be subject to any obligations arising from such membership,</li>
+        <li>the Artist will handle and pay all claims arising from such membership independently,</li>
+        <li>the Artist will fully indemnify fjalla.</li>
+      </ul>
+    </section>
+
+    <section id="s6">
+      <h2><span class="num">§ 6</span>Artist Warranties (Rights &amp; Compliance)</h2>
+      <p><span class="clause">6.1</span> The Artist warrants that they are the sole and unrestricted rights holder or otherwise have all rights necessary to exploit the content, including but not limited to:</p>
+      <ul>
+        <li>master rights / sound recording rights</li>
+        <li>neighbouring rights (performers, musicians)</li>
+        <li>producer rights</li>
+        <li>publishing rights</li>
+        <li>composition rights / authorship rights</li>
+        <li>synchronisation rights (for Reels)</li>
+        <li>cover art / artwork / trademark rights</li>
+        <li>names, logos, samples, loops, beats, voices, AI-generated voices, remixes</li>
+      </ul>
+      <p><span class="clause">6.2</span> The Artist warrants that:</p>
+      <ul>
+        <li>no samples or third-party materials are used without valid licensing,</li>
+        <li>no third-party rights are infringed,</li>
+        <li>no personal rights are violated,</li>
+        <li>there are no pending legal disputes or claims relating to the rights.</li>
+      </ul>
+      <p><span class="clause">6.3</span> The Artist further warrants that the content does not violate any applicable laws, youth protection laws, or public policy.</p>
+    </section>
+
+    <section id="s7">
+      <h2><span class="num">§ 7</span>License Grant to fjalla</h2>
+      <p><span class="clause">7.1</span> By uploading content, the Artist grants fjalla a worldwide, non-exclusive, transferable, sublicensable, royalty-free license to use the content for the operation of the Platform.</p>
+      <p><span class="clause">7.2</span> This license includes in particular the right to:</p>
+      <ul>
+        <li>host, store, convert, encode, and compress content</li>
+        <li>stream and make content publicly available</li>
+        <li>promote and market content within fjalla's apps and websites</li>
+        <li>apply technical protection measures</li>
+        <li>include content in previews, playlists, and recommendations</li>
+      </ul>
+      <p><span class="clause">7.3</span> fjalla is not obligated to publish content or keep it available permanently.</p>
+    </section>
+
+    <section id="s8">
+      <h2><span class="num">§ 8</span>No Rights Clearance by fjalla / No Payments to Third Parties</h2>
+      <p><span class="clause">8.1</span> fjalla does not provide rights clearance services and does not verify the chain of title.</p>
+      <p><span class="clause">8.2</span> fjalla pays remuneration exclusively to the registered Artist Account. fjalla owes no payments to third parties, including:</p>
+      <ul>
+        <li>co-writers, co-producers, featured artists</li>
+        <li>labels, publishers, managers</li>
+        <li>collecting societies or rights management organisations</li>
+      </ul>
+      <p><span class="clause">8.3</span> Once fjalla has paid out remuneration to the Artist, the Artist is solely responsible for compensating all contributors, rights holders, and entitled parties.</p>
+    </section>
+
+    <section id="s9">
+      <h2><span class="num">§ 9</span>Remuneration / Payout / Accounting</h2>
+      <p><span class="clause">9.1</span> The payout rate per stream is determined by the payout model displayed in the Artist Dashboard. fjalla may change the payout model at any time.</p>
+      <p><span class="clause">9.2</span> fjalla may adjust streams and payouts, including retroactively, particularly in cases of:</p>
+      <ul>
+        <li>incorrect metadata</li>
+        <li>fraud, manipulation, or artificial stream generation</li>
+        <li>technical errors or duplicate counts</li>
+        <li>legal claims raised by third parties</li>
+      </ul>
+      <p><span class="clause">9.3</span> Payouts will be made only after reaching a minimum payout threshold and after successful identity and tax verification.</p>
+      <p><span class="clause">9.4</span> fjalla may withhold taxes, fees, reserves, chargebacks, payment provider fees, or legally required deductions.</p>
+    </section>
+
+    <section id="s10">
+      <h2><span class="num">§ 10</span>Freezing Content / Suspension / Clawback (Recovery of Payments)</h2>
+      <p><span class="clause">10.1</span> fjalla may at any time remove, block, disable, freeze, or monetarily suspend content, in particular if:</p>
+      <ul>
+        <li>metadata is incorrect,</li>
+        <li>there is suspicion of rights infringement,</li>
+        <li>a third party raises claims,</li>
+        <li>fraud or misuse is suspected,</li>
+        <li>legal or regulatory measures are threatened.</li>
+      </ul>
+      <p><span class="clause">10.2</span> fjalla may withhold payouts or recover amounts already paid ("Clawback") if:</p>
+      <ul>
+        <li>third-party claims arise or are asserted,</li>
+        <li>it is discovered that rights were not fully owned or controlled,</li>
+        <li>streams were manipulated or artificially generated,</li>
+        <li>false statements were made.</li>
+      </ul>
+      <p><span class="clause">10.3</span> The Artist must repay clawed-back amounts within 14 days of written request. fjalla may offset such claims against future payouts.</p>
+    </section>
+
+    <section id="s11">
+      <h2><span class="num">§ 11</span>Complaints / Rights Holder Claims / Notice Procedures</h2>
+      <p><span class="clause">11.1</span> fjalla may remove or block content without prior notice if rights holder complaints are received.</p>
+      <p><span class="clause">11.2</span> The Artist must promptly provide fjalla with all information and documentation proving the rights chain upon request.</p>
+      <p><span class="clause">11.3</span> fjalla is not obligated to restore content even if counter-evidence is provided by the Artist.</p>
+    </section>
+
+    <section id="s12">
+      <h2><span class="num">§ 12</span>Indemnification</h2>
+      <p><span class="clause">12.1</span> The Artist shall fully indemnify and hold harmless fjalla, including its directors, employees, partners, payment providers, and licensees, from and against all third-party claims, damages, losses, liabilities, costs, and expenses (including reasonable attorney fees) arising from:</p>
+      <ul>
+        <li>infringement of copyright, neighbouring rights, trademark rights</li>
+        <li>incorrect metadata or false statements</li>
+        <li>violation of personal rights</li>
+        <li>missing licenses, samples, beats, cover art rights</li>
+        <li>violations of these Terms</li>
+      </ul>
+      <p><span class="clause">12.2</span> This indemnification applies worldwide and regardless of whether fjalla is found liable by a court judgment or resolves a claim by settlement.</p>
+    </section>
+
+    <section id="s13">
+      <h2><span class="num">§ 13</span>Prohibited Practices / Fraud / Stream Manipulation</h2>
+      <p><span class="clause">13.1</span> Any manipulation of streams is strictly prohibited, including but not limited to:</p>
+      <ul>
+        <li>bots</li>
+        <li>click farms</li>
+        <li>artificial streaming programmes</li>
+        <li>incentivised streaming without transparency</li>
+        <li>automated repeat playback</li>
+      </ul>
+      <p><span class="clause">13.2</span> In case of violation, fjalla may terminate the account immediately, remove content, and recover all payouts.</p>
+    </section>
+
+    <section id="s14">
+      <h2><span class="num">§ 14</span>fjalla Liability</h2>
+      <p><span class="clause">14.1</span> fjalla shall be liable without limitation only in cases of intent, gross negligence, and personal injury.</p>
+      <p><span class="clause">14.2</span> In cases of simple negligence, fjalla shall only be liable for breach of essential contractual obligations ("cardinal obligations") and only up to the foreseeable typical damage.</p>
+      <p><span class="clause">14.3</span> fjalla shall not be liable for lost profits, data loss, or indirect damages.</p>
+      <p><span class="clause">14.4</span> fjalla provides no guarantee of uninterrupted availability, reach, or monetisation.</p>
+    </section>
+
+    <section id="s15">
+      <h2><span class="num">§ 15</span>Term / Termination / Account Deletion</h2>
+      <p><span class="clause">15.1</span> The contract is concluded for an indefinite period.</p>
+      <p><span class="clause">15.2</span> Artists may terminate at any time and request removal of their content. fjalla may define reasonable technical lead times for removal.</p>
+      <p><span class="clause">15.3</span> fjalla may terminate at any time without cause with reasonable notice.</p>
+      <p><span class="clause">15.4</span> fjalla may terminate immediately in cases of rights infringement, fraud, or material breach.</p>
+      <p><span class="clause">15.5</span> After termination, indemnification obligations, clawback rights, and outstanding payment obligations remain in force.</p>
+    </section>
+  </main>
+</div>
+
+<footer>
+  © 2026 fjalla · <a class="totop" href="#">Back to top ↑</a>
+</footer>
+
+</body>
+</html>
